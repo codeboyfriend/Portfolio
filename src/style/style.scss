@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: rgb(19, 19, 19);
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+// Navbar Component
+.navbar ul {
+    display: flex;
+
+    li {
+        cursor: pointer;
+        padding: 20px 5px 5px 5px;
+        background-color: #ca0707;
+        margin: 0 3px;
+        font-size: .9rem;
+    }
+}
