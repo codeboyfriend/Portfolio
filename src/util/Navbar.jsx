@@ -10,14 +10,15 @@ const Navbar = () => {
       display: 'flex',
       justifyContent: 'space-between',
       alignItems: 'center',
-      padding: '0 10px'
+      padding: '0 25px',
+      marginBottom: '20px'
     }} className='navbar'>
       <Box>
         <Text sx={{
           fontSize: '1.5rem',
           fontWeight: '500',
           paddingTop: '10px'
-        }}>Codeboyfriend</Text>
+        }}>Michael</Text>
       </Box>
 
       <Box>

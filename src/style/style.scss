@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: rgb(19, 19, 19);
+    background-color: rgb(12, 12, 12);
     color: #fff;
 }
 
@@ -32,4 +32,9 @@ ul {
         margin: 0 3px;
         font-size: .9rem;
     }
+}
+
+// Landing Page component
+.LandingImage img {
+    width: 50%;
 }

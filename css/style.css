@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: rgb(19, 19, 19);
+  background-color: rgb(12, 12, 12);
   color: #fff;
 }
 
@@ -29,4 +29,8 @@ ul {
   background-color: #ca0707;
   margin: 0 3px;
   font-size: 0.9rem;
+}
+
+.LandingImage img {
+  width: 50%;
 }/*# sourceMappingURL=style.css.map */
