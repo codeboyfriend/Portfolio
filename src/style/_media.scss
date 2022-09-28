@@ -1,0 +1,102 @@
+@media (max-width: '900px') {
+    .navbar,
+    .LandingPage,
+    .About {
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: '768px') {
+    .navbar,
+    .LandingPage,
+    .About {
+        padding: 0 50px;
+    }
+
+    .LandingImage{
+        display: none;
+    }
+
+    .large_nav {
+        display: none;    
+    }
+
+    .extension {
+        display: block;
+    }
+
+    .About {
+        .swiper_box {
+            flex-direction: column;
+        }
+        
+        .write_up {
+            width: 100%;
+        }
+
+        .AboutContent {
+            margin-top: 2rem;
+        }
+    }
+}
+
+// @media screen {
+//     .navbar,
+//     .LandingPage,
+//     .About {
+//         padding: 0 20px;
+//     }
+// }
+
+@media (max-width: '425px') {
+    .App {
+       .shapes {
+
+        .circle {
+            display: block;
+           }
+       }
+    }
+
+    .navbar,
+    .LandingPage,
+    .About {
+        padding: 0 30px;
+    }
+
+    .LandingImage {
+        display: none;
+    }
+}
+
+@media (max-width: '360px') {
+    .navbar,
+    .LandingPage,
+    .About {
+        padding: 0 20px;
+    }
+
+    .LandingContent {
+        .greeting {
+            width: 40%;
+        }
+
+        .name {
+            font-size: 1.8rem;
+        }
+    }
+
+    .About {
+        .AboutImage {
+            .landing_con {
+                z-index: -1;
+                width: 250px;
+            }
+        }
+
+        .badges {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
