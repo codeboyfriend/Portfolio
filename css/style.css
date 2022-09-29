@@ -4,6 +4,25 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
+  transition: all 0.2s linear;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
+
+html::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #ca0707;
+  border-radius: 5rem;
 }
 
 body {
@@ -27,7 +46,7 @@ ul {
   z-index: -1;
 }
 
-.About, .LandingPage, .navbar {
+.contact, .resume, .portfolio, .About, .LandingPage, .navbar {
   padding: 0 100px;
 }
 
@@ -46,9 +65,31 @@ ul {
 .App .shapes .circle {
   display: none;
 }
+.App .shapes .big_circle_a {
+  top: 110vh;
+  right: -12rem;
+}
+.App .shapes .big_circle_b {
+  top: 110vh;
+  left: -12rem;
+}
 
+.navbar .code {
+  text-transform: uppercase;
+}
 .navbar .large_nav ul {
   display: flex;
+}
+.navbar .large_nav ul a {
+  padding: 20px 10px 10px 10px;
+  margin: 0 3px;
+  font-size: 0.9rem;
+}
+.navbar .large_nav ul a:hover {
+  background-color: #ca0707;
+}
+.navbar .large_nav ul a:link {
+  background-color: rgb(3, 3, 3);
 }
 .navbar .small_nav {
   width: 10rem;
@@ -60,12 +101,12 @@ ul {
   transition: opacity 0.5s;
   z-index: 2000;
 }
-.navbar li {
-  cursor: pointer;
+.navbar .small_nav li {
   padding: 20px 5px 5px 5px;
   background-color: #ca0707;
   margin: 0 3px;
   font-size: 0.9rem;
+  border-bottom: 1px solid #fff;
 }
 
 .extension {
@@ -91,6 +132,12 @@ ul {
 
 .About .swiper_box {
   display: flex;
+}
+.About .swiper_box .info {
+  margin: 15px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 .About .write_up {
   width: 500px;
@@ -120,17 +167,78 @@ ul {
   gap: 0.5rem;
 }
 
+.portfolio {
+  margin: 60px 0;
+}
+
+.resume {
+  margin: 40px 0;
+}
+
+.contact_con {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+  margin-top: 35px;
+}
+.contact ul {
+  line-height: 1.7rem;
+}
+.contact ul li {
+  font-size: 0.9rem;
+}
+.contact .icon {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  padding-top: 5px;
+}
+
+.contactLeftBox {
+  position: relative;
+}
+.contactLeftBox::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  z-index: -1;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.bgStyle {
+  position: relative;
+}
+.bgStyle::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  z-index: -1;
+}
+
 @media (max-width: 900px) {
   .navbar,
 .LandingPage,
-.About {
+.About,
+.resume,
+.contact {
     padding: 0 60px;
   }
 }
 @media (max-width: 768px) {
   .navbar,
 .LandingPage,
-.About {
+.About,
+.portfolio,
+.resume,
+.contact {
     padding: 0 50px;
   }
   .LandingImage {
@@ -151,24 +259,45 @@ ul {
   .About .AboutContent {
     margin-top: 2rem;
   }
+  .contact_con {
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 425px) {
   .App .shapes .circle {
     display: block;
   }
+  .App .big_circle_a,
+.App .big_circle_b,
+.App .land_circle {
+    display: none;
+  }
   .navbar,
 .LandingPage,
-.About {
+.About,
+.portfolio,
+.resume,
+.contact {
     padding: 0 30px;
   }
   .LandingImage {
     display: none;
   }
+  .About .badges {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .About .swiper_box .info {
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 360px) {
   .navbar,
 .LandingPage,
-.About {
+.About,
+.portfolio,
+.resume,
+.contact {
     padding: 0 20px;
   }
   .LandingContent .greeting {
@@ -181,8 +310,9 @@ ul {
     z-index: -1;
     width: 250px;
   }
-  .About .badges {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 320px) {
+  .About .swiper_box {
+    align-items: flex-start;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,13 +1,25 @@
 import '../css/style.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Box } from '@chakra-ui/react';
 import Navbar from './util/Navbar';
 import LandingPage from './pages/LandingPage';
 import About from './pages/About';
+import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume';
+import Contact from './pages/Contact';
+import Icons from './util/Icons';
 
 function App() {
+  const bigCircle = {
+    w: '20rem',
+    h: '20rem',
+    backgroundColor: '#ca0707',
+    borderRadius: '20px',
+    pos: 'absolute',
+    transform: 'rotate(-45deg)',
+    zIndex: '-1'
+  }
   return (
-    <Router>
       <div className="App">
         <Box className='shapes'>
           <Box sx={{
@@ -21,6 +33,16 @@ function App() {
           }}></Box>
 
           <Box sx={{
+            w: '25rem',
+            h: '25rem',
+            backgroundColor: '#ca0707',
+            borderRadius: '100%',
+            pos: 'absolute',
+            top: '20vh',
+            right: '-270px'
+          }} className='land_circle'></Box>
+
+          <Box sx={{
             w: '60rem',
             h: '20rem',
             backgroundColor: '#ca0707',
@@ -32,17 +54,20 @@ function App() {
             zIndex: '-1'
           }} className='circle'>
           </Box>
+
+          <Box sx={bigCircle} className='big_circle_a'></Box>
+
+          <Box sx={bigCircle} className='big_circle_b'></Box>
         </Box>
 
+        {/* <Icons /> */}
         <Navbar />
-        
-        <Routes>
-          <Route path='/' element={<LandingPage />} />
-        </Routes>
-
+        <LandingPage />
         <About />
+        <Portfolio />
+        <Resume />
+        <Contact />
     </div>
-    </Router>
   )
 }
 

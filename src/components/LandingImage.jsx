@@ -10,10 +10,10 @@ const LandingImage = () => {
           bgColor: '#fff'
         }} className="top"></Box>
       <Box sx={{
-        w: '300px',
+        maxW: '300px',
         m: '0 auto',
         border: '1px solid #fff',
-        bgColor: '#000'      
+        bgColor: '#000',      
     }} className="landing_con">
         <img src={Pic} alt="code" />
       </Box>

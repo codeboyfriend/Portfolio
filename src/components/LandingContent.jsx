@@ -3,12 +3,12 @@ import {
     Text,
     Heading 
 } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
 import { 
   FaTwitter, 
   FaGithub,
   FaInstagram,
-  FaLinkedinIn
+  FaLinkedinIn,
+  FaWhatsapp
 } from "react-icons/fa";
 
 const LandingContent = () => {
@@ -49,18 +49,21 @@ const LandingContent = () => {
                 fontSize: '1.2rem',
                 display: "flex"
             }}>
-                <Link to={"twitter.com/codeboyfriend"}>
+                <a href={"http://www.twitter.com/codeboyfriend"}>
                   <Text marginRight={'.5rem'}><FaTwitter /></Text>
-                </Link>
-                <Link to={"github.com/codeboyfriend"}>
+                </a>
+                <a href={"http://www.github.com/codeboyfriend"}>
                   <Text marginRight={'.5rem'}><FaGithub /></Text>
-                </Link>
-                <Link to={"instagram.com/code_boyfriend"}>
+                </a>
+                <a href={"http://www.instagram.com/code_boyfriend"}>
                   <Text marginRight={'.5rem'}><FaInstagram /></Text>
-                </Link>
-                <Link to={"instagram.com/code_boyfriend"}>
+                </a>
+                <a href={"https://wa.me/+2349036190420"}>
                   <Text marginRight={'.5rem'}><FaLinkedinIn /></Text>
-                </Link>
+                </a>
+                <a href={"https://wa.me/+2349036190420"}>
+                  <Text marginRight={'.5rem'}><FaWhatsapp /></Text>
+                </a>
             </Box>
         </Box>
 
@@ -68,12 +71,14 @@ const LandingContent = () => {
             display: 'flex',
             margin: '1rem 0'
         }}>
+            <a href="#portfolio">
             <Text 
               bgColor={"#ca0707"} 
               border={"1px solid #ca0707"}
               marginRight={"10px"}
               sx={buttonStyle}
             >View Work</Text>
+            </a>
             <Text
               border={"1px solid #fff"} 
               sx={buttonStyle}

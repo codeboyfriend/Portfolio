@@ -7,9 +7,12 @@ import {
     return (
       <Box className="AboutImage">
         <Box sx={{
-            bgColor: '#ca0707'
+            bgColor: '#ca0707',
+            zIndex: '-1'
         }} className="top"></Box>
         <Box sx={{
+          maxW: '300px',
+          m: '0 auto',
           border: '1px solid #ca0707',
           bgColor: '#000'      
       }} className="landing_con">

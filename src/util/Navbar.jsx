@@ -23,36 +23,52 @@ const Navbar = () => {
       pos: 'fixed',
       backgroundColor: 'rgb(3, 3, 3)',
       top: 0,
-      left: 0
+      left: 0,
+      zIndex: '2000',
+      paddingBottom: '.5rem'
     }} className='navbar'>
       <Box>
         <Text sx={{
           fontSize: '1.5rem',
           fontWeight: '500',
           paddingTop: '10px'
-        }}>codeboyfriend</Text>
+        }} className='code'>codeboyfriend</Text>
       </Box>
 
       <Box className="large_nav">
         <ul>
-          <li>About</li>
-          <li>Portfolio</li>
-          <li>Resume</li>
-          <li>Contact</li>
+        <a href="#about">
+           <li>About</li>
+          </a>
+          <a href="#portfolio">
+            <li>Portfolio</li>
+          </a>
+          <a href="#resume">
+            <li>Resume</li>
+          </a>
+          <a href="#contact">
+            <li>Contact</li>
+          </a>
         </ul>
       </Box>
 
       <Box 
         className="small_nav"
-        opacity={show ? 1 : 0 }
+        display={show ? 'block' : 'none' }
       >
         <ul>
-          <li>About</li>
-          <li>Portfolio</li>
-          <li>Resume</li>
-          <li style={{
-            paddingBottom: '20px'
-          }}>Contact</li>
+          <a href="#about">
+           <li>About</li>
+          </a>
+          <a href="#portfolio">
+            <li>Portfolio</li>
+          </a>
+          <a href="#resume">
+            <li>Resume</li>
+          </a>
+          <a href="#contact">
+            <li>Contact</li>
+          </a>
         </ul>
       </Box>
 
