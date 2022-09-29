@@ -18,7 +18,7 @@ const ContactLeft = () => {
     }} className="contactLeftBox">
         <Text sx={{
             fontWeight: '500',
-            fontSize: '1rem',
+            fontSize: '1.2rem',
             marginBottom: '.3rem'
         }}>CONTACT INFO</Text>
         <Text  sx={{

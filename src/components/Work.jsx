@@ -15,11 +15,17 @@ import { Pagination } from 'swiper';
 import 'swiper/css';
 import "swiper/css/pagination";
 
-import Card from "../assets/image/card.png";
+import kipnote from "../assets/image/kipnote.png";
+import kwiz from "../assets/image/kwiz.png";
+import koiin from "../assets/image/koiin.png";
+import lively from "../assets/image/lively.png";
+import sneeaker from "../assets/image/sneeaker.png";
+import nysc from "../assets/image/nysc.png";
 
 const Work = () => {
   return (
     <Swiper
+        className="projects"
         pagination={true}
         modules={[Pagination]}
         spaceBetween={50}
@@ -50,44 +56,46 @@ const Work = () => {
         }}
     >
         <SwiperSlide>
-            <a href="kipNote.netlify.app">
+            <a href="https://kipNote.netlify.app">
                 <Box className="box">
-                    <img src={Card} alt="kipNote" />
+                    <img src={kipnote} alt="kipNote" />
                 </Box>
             </a>
         </SwiperSlide>
         <SwiperSlide>
-            <a href="sneeakers.netlify.app">
+            <a href="https://sneeakers.netlify.app">
                 <Box className="box">
-                    <img src={Card} alt="sneeakers" />
+                    <img src={sneeaker} alt="sneeakers" />
                 </Box>
             </a>
         </SwiperSlide>
         <SwiperSlide>
-            <a href="kwiiz.netlify.app">
+            <a href="https://kwiiz.netlify.app">
                 <Box className="box">
-                    <img src={Card} alt="kwiiz" />
+                    <img src={kwiz} alt="kwiiz" />
                 </Box>
             </a>
         </SwiperSlide>
         <SwiperSlide>
-            <a href="koiin.netlify.app">
+            <a href="https://koiin.netlify.app">
                 <Box className="box">
-                    <img src={Card} alt="koiin" />
+                    <img src={koiin} alt="koiin" />
                 </Box>
             </a>
         </SwiperSlide>
         <SwiperSlide>
-            <a href="live-ly.netlify.app">
+            <a href="https://live-ly.netlify.app">
                 <Box className="box">
-                    <img src={Card} alt="lively" />
+                    <img src={lively} alt="lively" />
                 </Box>
             </a>
         </SwiperSlide>
         <SwiperSlide>
-            <Box className="box">
-                <img src={Card} alt="kipNote" />
-            </Box>
+            <a href="https://nysc-portal.netlify.app">
+                <Box className="box">
+                    <img src={nysc} alt="nysc" />
+                </Box>  
+            </a>
         </SwiperSlide>
     </Swiper>
   )
