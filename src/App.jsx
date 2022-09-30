@@ -1,6 +1,7 @@
 import '../css/style.css';
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Box } from '@chakra-ui/react';
+import aos from 'aos';
+import 'aos/dist/aos.css';
 import Navbar from './util/Navbar';
 import LandingPage from './pages/LandingPage';
 import About from './pages/About';
@@ -10,6 +11,9 @@ import Contact from './pages/Contact';
 import Icons from './util/Icons';
 
 function App() {
+  aos.init({
+    duration: 800
+  })
   const bigCircle = {
     w: '20rem',
     h: '20rem',
@@ -65,7 +69,7 @@ function App() {
         <LandingPage />
         <About />
         <Portfolio />
-        <Resume />
+        <Resume data-aos="fade-up" data-aos-offset="200" />
         <Contact />
     </div>
   )

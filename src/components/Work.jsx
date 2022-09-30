@@ -31,7 +31,6 @@ const Work = () => {
         spaceBetween={50}
         breakpoints= {{
             0: {
-                // width: 376,
                 slidesPerView: 1,
             },
 

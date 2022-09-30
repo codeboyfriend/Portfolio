@@ -34,7 +34,7 @@ const Resume = () => {
             className="bgStyle"
         >My Resume</Text>
 
-        <Text sx={{
+        <Text data-aos="fade-up" data-aos-offset="200" sx={{
             fontSize: '.9rem',
             margin: '1rem 0'
         }}>
@@ -43,7 +43,7 @@ const Resume = () => {
         </Text>
 
         <Box>
-            <Text 
+            <Text data-aos="fade-in" data-aos-delay='300'
                 sx={buttonStyle} 
                 width={'7rem'}
             >Download CV</Text>

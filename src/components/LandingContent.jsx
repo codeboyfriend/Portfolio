@@ -11,6 +11,8 @@ import {
   FaWhatsapp
 } from "react-icons/fa";
 
+import Typewriter from "typewriter-effect";
+
 const LandingContent = () => {
   const buttonStyle = {
     padding: "8px",
@@ -19,6 +21,7 @@ const LandingContent = () => {
   }
   return (
     <Box className="LandingContent">
+        
         <Text className="greeting" sx={{
           fontSize: '.9rem',
           textTransform: 'uppercase',
@@ -29,11 +32,17 @@ const LandingContent = () => {
           textAlign: 'center'
         }}>Hello, I am </Text>
         <Heading className="name" sx={{
-          fontSize: '2.3rem',
+          fontSize: '2.2rem',
           wordSpacing: '.3rem',
           margin: '.5rem 0'
         }}>
-          Michael Oladimeji
+          <Typewriter 
+            options={{
+              strings: ['Michael Oladimeji', 'Codeboyfriend'],
+              autoStart: true,
+              loop: true
+            }}
+          />
         </Heading>
         <Text sx={{
           fontSize: '.8rem'

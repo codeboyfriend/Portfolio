@@ -73,7 +73,7 @@ const AboutContent = () => {
                             className="greeting bgStyle" 
                             sx={textStyle}>About Me </Text>
 
-                        <Text className="write_up" sx={{
+                        <Text data-aos="fade-left" className="write_up" sx={{
                             fontSize: '.8rem'
                         }}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, labore officiis fugiat voluptas maxime quam nemo illum culpa ea beatae nulla magni esse repellat voluptatibus mollitia quod qui error, voluptatum cumque ad. Numquam placeat iusto explicabo, minus voluptatem odit amet facilis non possimus veritatis cum a soluta. Soluta, incidunt iste.</Text>
                     </Box>
@@ -107,6 +107,9 @@ const AboutContent = () => {
                                 <img src="https://img.shields.io/badge/-Chakra%20UI-222222?style=flat&logo=Chakraui&logoColor=61DAFB" alt="chakra" />
                                 <img src="https://img.shields.io/badge/-Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=ffffff" alt="firebase" />
                                 <img src="https://img.shields.io/badge/-Git-222222?style=flat&logo=git&logoColor=F05032" alt="git" />
+                                <img src="https://img.shields.io/badge/-Github-222222?style=flat&logo=github&logoColor=ffffff" alt="github" />
+                                <img src="https://img.shields.io/badge/-Npm-222222?style=flat&logo=npm&logoColor=F05032" alt="npm" />
+                                <img src="https://img.shields.io/badge/-VSCode-222222?style=flat&logo=visualstudiocode&logoColor=61DAFB" alt="vscode" />
                             </Box>
                         </Box>
 

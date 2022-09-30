@@ -10,7 +10,7 @@ import {
 
 const ContactLeft = () => {
   return (
-    <Box sx={{
+    <Box data-aos="fade-right" data-aos-delay='300' sx={{
         bgColor: '#bd0606',
         padding: '15px',
         borderTopLeftRadius: '15px',
