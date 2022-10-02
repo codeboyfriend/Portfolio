@@ -5,7 +5,7 @@ import {
   
   const AboutImageIV = () => {
     return (
-      <Box className="AboutImage">
+      <Box data-aos="fade-right" className="AboutImage">
         <Box sx={{
             bgColor: '#ca0707',
             zIndex: '-1'

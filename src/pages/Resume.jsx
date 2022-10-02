@@ -1,7 +1,8 @@
 import { 
     Box,
     Text 
-} from "@chakra-ui/react"
+} from "@chakra-ui/react";
+import cv from '../assets/doc/CV.pdf';
 
 const Resume = () => {
     const textStyle = {
@@ -23,7 +24,7 @@ const Resume = () => {
         border: '1px solid #fff',
         textAlign: 'center',
         margin: '0 auto'
-    }
+    };
 
   return (
     <Box sx={{
@@ -43,10 +44,12 @@ const Resume = () => {
         </Text>
 
         <Box>
-            <Text data-aos="fade-in" data-aos-delay='300'
-                sx={buttonStyle} 
-                width={'7rem'}
-            >Download CV</Text>
+            <a href={cv} download rel="noopener noreferrer" target={'_blank'}>
+                <Text data-aos="fade-in" data-aos-delay='300'
+                    sx={buttonStyle} 
+                    width={'7rem'}
+                >Download CV</Text>
+            </a>
         </Box>
     </Box>
   )

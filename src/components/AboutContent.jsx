@@ -74,8 +74,10 @@ const AboutContent = () => {
                             sx={textStyle}>About Me </Text>
 
                         <Text data-aos="fade-left" className="write_up" sx={{
-                            fontSize: '.8rem'
-                        }}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, labore officiis fugiat voluptas maxime quam nemo illum culpa ea beatae nulla magni esse repellat voluptatibus mollitia quod qui error, voluptatum cumque ad. Numquam placeat iusto explicabo, minus voluptatem odit amet facilis non possimus veritatis cum a soluta. Soluta, incidunt iste.</Text>
+                            fontSize: '.8rem',
+                            lineHeight: '1.3rem'
+                        }}>Hi, thanks for stopping by, I'm Michael Oladimeji, a Frontend developer with a good problem solving skills. I've been building web applications and websites with the latest design trends. <br />
+                        I help convert vision and idea into meaningful and resourceful product. If you're looking for a dealine-driven, and creative frontend devloper for that project you want to developed. I might just be the guy you need.</Text>
                     </Box>
                 </Box>
             </SwiperSlide>
@@ -98,7 +100,7 @@ const AboutContent = () => {
                                 width={'8rem'} 
                                 sx={textStyle}>Skills</Text>
 
-                            <Box className="badges">
+                            <Box data-aos="fade-left" className="badges">
                                 <img src="https://img.shields.io/badge/-HTML5-ffffff?style=flat&logo=html5" alt="html" />
                                 <img src="https://img.shields.io/badge/-CSS3-222222?style=flat&logo=css3&logoColor=61DAFB" alt="css" />
                                 <img src="https://img.shields.io/badge/-Sass-ffffff?style=flat&logo=sass" alt="sass" />
@@ -119,16 +121,13 @@ const AboutContent = () => {
                                 width={'8rem'} 
                                 sx={textStyle}>Other Skills</Text>
 
-                            <Box className="badges">
+                            <Box data-aos="fade-left" className="badges">
                                 <Box>
                                     <div style={{
                                         margin: '.5rem 0'
                                     }}>
                                         <img src="https://img.shields.io/badge/-MsWord-222222?style=flat&logo=microsoftword&logoColor=61DAFB" alt="MsWord" />
                                     </div>
-                                    <CircularProgress value={70} color='#ca0707'>
-                                        <CircularProgressLabel>70%</CircularProgressLabel>
-                                    </CircularProgress>
                                 </Box>
 
                                 <Box>
@@ -137,9 +136,6 @@ const AboutContent = () => {
                                     }}>
                                         <img src="https://img.shields.io/badge/-MsExcel-222222?style=flat&logo=microsoftexcel&logoColor=61DAFB" alt="MsExcel" />
                                     </div>
-                                    <CircularProgress value={40} color='#ca0707'>
-                                        <CircularProgressLabel>40%</CircularProgressLabel>
-                                    </CircularProgress>
                                 </Box>
 
                                 <Box>
@@ -148,9 +144,6 @@ const AboutContent = () => {
                                     }}>
                                         <img src="https://img.shields.io/badge/-Photoshop-222222?style=flat&logo=adobephotoshop&logoColor=61DAFB" alt="Photoshop" />
                                     </div>
-                                    <CircularProgress value={30} color='#ca0707'>
-                                        <CircularProgressLabel>30%</CircularProgressLabel>
-                                    </CircularProgress>
                                 </Box>
                             </Box>
                         </Box>
@@ -178,7 +171,7 @@ const AboutContent = () => {
                             marginBottom: '.5rem'
                         }}>More</Text>
 
-                        <Box className="info">
+                        <Box data-aos="fade-left" className="info">
                             <Box>
                                 <Text sx={heading}><FaGlobe /></Text>
                                 <Text sx={text}>Oladimeji Michael</Text>

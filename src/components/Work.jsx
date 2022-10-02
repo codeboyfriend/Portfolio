@@ -3,15 +3,17 @@ import {
     Text
 } from "@chakra-ui/react";
 
-// Import Swiper React components
 import { 
     Swiper, 
     SwiperSlide
 } from 'swiper/react';
 
+import {
+    FaArrowRight
+} from 'react-icons/fa'
+
 import { Pagination } from 'swiper';
 
-// Import Swiper styles
 import 'swiper/css';
 import "swiper/css/pagination";
 
